@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>document</title>
+    </head>
+    <body style="text-align: center;">
+        <script>
+            function popup1(y)
+            {
+                var x = y.value
+                if(x>18)
+            {
+                if(x>=21)
+                {
+                    alert("eligible for marriage")
+                }
+                else
+                {
+                    alert("major but not eligible for marriage")
+                }
+            }
+            else
+            {
+                alert("minor")
+            }
+
+            }
+        </script>
+
+        <label for="">Enter the age:</label>
+        <input type="text" id="a" placeholder="age">
+        <button onclick="popup1(document.getElementById('a'))"> click</button>
+    </body>
+</html>
